@@ -209,9 +209,17 @@ def greyj_main():
 
   while True:
     greyj_main()
+    
+    
+    
+# initial check
+def initialcheck():
+  print(Fore.RED + "Setting up requirments and checking if the requirments are installed or not,\nalso giving taking the required permission,\nplese be patient !!")
+  os.system("pip3 install -r requirments.txt")
 
 #continuous program using output
 if __name__ == "__main__":
+  initialcheck()
   animated_marker()
   title_of_the_tool()
   greyj_main()
